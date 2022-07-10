@@ -15,7 +15,7 @@ export default function Home({worldLeaders}) {
         {
           worldLeaders.map((worldLeader) => {
             return (
-              <div>
+              <div key={worldLeader.name}>
                 <h3>{worldLeader.name}</h3>
               </div>
             )
