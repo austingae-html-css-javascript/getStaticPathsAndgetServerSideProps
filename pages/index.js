@@ -26,7 +26,7 @@ export default function Home({worldLeaders}) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   let response = await fetch(`https://raw.githubusercontent.com/austingae/json-practice/main/JSON/world-leaders.json`);
   let data = await response.json();
   
