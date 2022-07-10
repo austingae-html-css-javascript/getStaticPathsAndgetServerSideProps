@@ -41,9 +41,10 @@ export async function getStaticProps() {
 
 /*
 getStaticProps will get the data at only build time. 
-Therefore, if I add new data, then the website will not show the new data.
+Therefore, if I add new data, then the website page will not show the new data.
 To show the new data, I will need to do build again.
-Correct!!!
+CORRECT!
+
 
 
 getServerSideProps will get the data before the website page loads. 
