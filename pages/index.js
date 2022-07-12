@@ -26,7 +26,7 @@ export default function Home({worldLeaders}) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   let response = await fetch(`https://raw.githubusercontent.com/austingae/json-practice/main/JSON/world-leaders.json`);
   let data = await response.json();
   
@@ -50,5 +50,5 @@ CORRECT!
 getServerSideProps will get the data before the website page loads. 
 Therefore, if I add new data, and I reload the page, then the website page will
 show the new data. 
-
+CORRECT!
 */
